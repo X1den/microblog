@@ -4,4 +4,8 @@ app = FastAPI()
 
 @app.get("/")
 def index():
-    return {}
+    return {"message": "Welcome to microblog API"}
+
+@app.get("/posts")
+def posts():
+    return []
